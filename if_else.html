@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="eval.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>JavaScript - If</title>
+</head>
+
+<body>
+
+
+    <div class="BarraSuperior">
+
+        <div class="TextoSup">
+            Estrutura de Controle If / Else
+        </div>
+
+
+        <div class="voltar">
+            <a href="java.html">
+                <i class='bx bx-left-arrow-alt'></i>
+            </a>
+        </div>
+
+        <div class="home">
+            <a href="index.html">
+                <i class='bx bxs-home'></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="logoif">
+        <img src="images/if.png">
+    </div>
+
+    <div class="texto">
+
+        Javascript função if:
+
+        <p>A estrutura condicional if permite ao JavaScript executar um trecho de código somente se uma determinada
+        condição for verdadeira. Ela pode ser escrita das seguintes formas :
+        <br>Quando há mais de uma linha de código a ser executado devemos usar { e } para delimitar esse bloco de
+        código:
+        <br>Exemplo:
+
+        <p>If ( condicao ) {
+        <br>// códigos que serão executados;
+        <br>// códigos que serão executados;
+        <br>// códigos que serão executados;
+        <br>}
+
+        <p>Quando há só uma linha de código para ser executado não precisamos usar { e } , fica opcional:
+
+        <p>If ( condicao)
+        <br>// códigos que vai ser executado;
+
+        <p>O código dentro da estrutura if só será executado se a condicao for verdadeira. Por exemplo:
+
+        <p>Var preco = 100;
+        <br>If ( preco > 100 )
+        <br>console.log ( “Desconto liberado” );
+        <br>//vai imprimir “Desconto liberado”
+
+        <p>Nesse exemplo , a instrução console.log(“Desconto liberado”) será executada somente se o valor dar variável
+        preco for maior que **100**.
+        <br>Caso a condição for falsa a instrução console.log(“Desconto liberado”) será ignorada.
+        <br>Ou será exibido undefined (indefinido) como resultado.
+        <br>Else
+        <br>Existem casos em que precisamos executar um código caso uma condição seja verdadeira ou um outro, caso ela
+        seja falsa. Para isso utilizamos a palavra-chave else.
+        <br>if ( condicao )
+        <br>// se condição for verdadeira executa
+        <br>else
+        <br>// se condição for falsa executa
+
+        <p>Para um bloco de códigos:
+
+        <p>if ( condicao ) {
+        <br>// códigos que serão
+        <br>// executados caso a
+        <br>// condição seja verdadeira
+        <br>} else
+        <br>// códigos que serão
+        <br>// executados caso a
+        <br>// condição seja falsa
+        <br>}
+
+        <p>Veja um exemplo, onde verificamos a variável preco e caso o seu valor seja maior que 100 a mensagem
+        console.log("Desconto liberado") será impressa. Caso contrário será impresso console.log("Nenhum desconto foi
+        liberado").
+
+        <p>var preco = 20;
+        <br>if ( preco > 100 )
+        <br> console.log("Desconto liberado");
+        <br>else
+        <br> console.log("Nenhum desconto foi liberado");
+        <br>// vai imprimir "Nenhum desconto foi liberado"
+
+        <p>Else e if
+
+        <p>Como vimos, utilizar if e else permite ao JavaScript executar um código dentre duas opções. Porém, há casos
+        em que devemos testar uma nova condição antes de executar o trecho de código alternativo. Uma forma de escrever
+        essa verificação é utilizando else if.
+        <br>var preco = 70;
+        <br>if ( preco > 100 ) {
+        <br>console.log("Desconto de 10% liberado");
+        <br>} else if ( preco > 50 ) {
+        <br>console.log("Desconto de 5% liberado");
+        <br>} else {
+        <br>console.log("Nenhum desconto foi liberado");
+
+        <p>// vai imprimir "Desconto de 5% liberado"
+        <br>}
+        <br>No exemplo acima temos três alternativas de códigos para serem executados:
+
+        <p>1 ➜ No primeiro caso, a instrução console.log("Desconto de 10% liberado") será executada se o valor da
+        variável preco for maior que 100.
+        <br>2 ➜ Se não for esse o caso, uma nova verificação será feita e se o valor da variável preco for maior que 50
+        a instrução console.log("Desconto de 5% liberado") será executada.
+        <br>3 ➜ Caso nenhuma dessas situações seja verdadeira a instrução console.log("Nenhum desconto foi liberado").
+
+        <p>if ternário
+        <br>A estrutura if possui uma forma mais compacta, chamada de if ternário. Sua sintaxe é a seguinte:
+        <br>condicao ? código1 : código2
+        <br>Veja um exemplo:
+
+        <p>var nome;
+        <br>console.log( nome ? 'Olá ' + nome : 'Digite um nome' );
+        <br>// vai imprimir 'Digite um nome'
+
+        <p>Esse código tem o mesmo efeito deste:
+
+        <p>var nome;
+        <br>var nome;
+        <br>if ( nome ) {
+        <br>console.log("Olá " + nome);
+        <br>} else {
+        <br>console.log("Digite um nome");
+        <br>}
+
+        <p>// vai imprimir 'Digite um nome'
+
+        <p>Contudo, a primeira forma, ternária, utiliza menos linhas para realizar a mesma verificação.
+
+        <p>Operador &&
+
+        <p>O operador && possui um comportamento chamado curto-circuito que torna possível executar um código de forma
+        similar ao if.
+        <br>Veja um exemplo:
+
+        <p>var valor = 650;
+        <br>if ( valor > 100 ) console.log(“Pode parcelar a compra sem juros”);
+        <br>// vai imprimir "Pode parcelar a compra sem juros"
+
+        <p>Esse código pode ser escrito utilizando && da seguinte forma:
+        <br>var valor = 650;
+        <br>( valor > 100 ) && console.log(“Pode parcelar a compra sem juros”) ;
+        <br>// vai imprimir "Pode parcelar a compra sem juros"
+
+        <p>Veja um outro exemplo, onde atribuímos um valor a uma variável, baseado na condição preco > 100.
+        <br>var preco = 20;
+        <br>var permiteParcelar = preco > 100 && true;
+        <br>console.log(permiteParcelar);
+        <br>// vai imprimir false
+
+        <p>Estas são as variações da estrutura if que o JavaScript nos oferece. O uso de cada uma delas vai depender de
+        como você vai codificar a sua aplicação.<br><br>
+
+        As condições for têm a mesma função da condição while, fazer algo repetitivo.
+        <p>No entanto, ao invés de utilizar uma expressão desconhecida, utilizamos um conjunto fixo de circunstâncias.
+        <br>Nele, temos que inicializar uma variável com um valor qualquer, testar uma condição, e incrementar ou
+        decrementar o valor da variável inicial, tudo na mesma instrução.<br>
+        Agora que sabe um pouco sobre os comandos acima teste aqui seus conhecimentos na caixa abaixo
+        (aumente o tamanho da caixa no canto inferior direito dela e clike no botãonzinho para que o código seja efetuado), lembrando que é necessário apertar a tecla F12 para
+        observar o resultado do seu comando no console a direita.
+        Nós criadores do site recomendamos que sempre que tiver dúvidas ou os comandos não funcionem há diversos
+        outros sites para complementar seu conhecimento pela internet, agora vamos para prática:<br>
+        <br>
+
+        <textarea id="text"></textarea>
+        <button onclick="Run()"></button>
+
+    </div>
+
+</body>
+<script>
+
+function Run() {
+    alert(eval(document.getElementById("text").value));
+}
+
+</script>
+
+</html>

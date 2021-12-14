@@ -1,0 +1,142 @@
+.Lista_Nav{
+    list-style: none;
+    margin-left:-35px;
+    padding-top:10px;
+    }
+
+li {
+    margin-bottom: 12px;
+    font: 16px helvetica;
+    color: #fff;
+}
+
+body{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    min-width: 100vh;
+    background-color: #DED5CE
+}
+
+.BarraLateral{
+    height: 100%;
+    width: 240px;
+    padding: 6px 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#1C5880;
+    text-decoration: none;
+}
+
+.BarraLateral .ConteudoLogo .Logo{
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.ConteudoLogo .Logo i{
+    font-size: 35px;
+    margin-right: 5px; 
+}
+
+.ConteudoLogo .Logo .NomeLogo{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.ConteudoLogo #btn{
+    color: #03A6A6;
+    font-size: 30px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 83%;
+    top: 19px;
+    text-align: center;
+}
+
+.BarraLateral ul li a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.BarraLateral ul li a:hover{
+    color: #11101d;
+    background: #fff;
+}
+
+.BarraLateral ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.botao_teste{
+    position: relative;
+    height: 32.5vh;
+    width: 157.5vh;
+    left: 255px;
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    display: inline-block;
+    top: -337px;
+    cursor: pointer;
+    margin: 5px 10px;
+    font-size: 23px;
+    font-weight: 900;
+    font-family:Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.video video{
+    position: absolute;
+    top: 0;
+    left: 265px;
+    width: 2000px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.LogoMaster{
+    z-index: 1;
+    position: relative;
+    font-size: 200px;
+    color: white;
+    text-align: center;
+    left: 700px;
+    top: -450px;
+}
+
+.SubLogo{
+    z-index: 1;
+    position: relative;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    left: 900px;
+    top: -760px;
+}
+
+.TextoSobre{
+    z-index:1;
+    position: relative;
+    width: 600px;
+    font-size: 28px;
+    color: white;
+    top: -700px;
+    left: 730px;
+    }
+

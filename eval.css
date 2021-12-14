@@ -1,0 +1,106 @@
+body {
+    background-color:#E9DCCC;
+}
+
+.BarraSuperior{
+    position: absolute;
+    top: 0;
+    left: -0.3vh;
+    height: 10%;
+    width: 110%;
+    background-color: #063749;
+
+}
+
+.BarraSuperior .TextoSup{
+    position: relative;
+    left: 30%;
+    right: 50%;
+    font-size: 40px;
+    color: white;
+    top: 2.5vh;
+    font-weight:800;
+    
+}
+
+#eval{
+    position:relative;
+    top: 50px;
+    left: 80px;
+    width: 80vh;
+    height: 80vh;
+    border: solid black;
+    border-radius: 10px;
+    
+}
+
+.texto {
+    position:relative;
+    border-radius: 5px;
+    border: none;
+    top:-650px;
+    left: 870px;
+    max-width: 50%;
+    background-color: #E9DCCC;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.texto2 {
+    position:relative;
+    border-radius: 5px;
+    border: none;
+    top: -480px;
+    left: 800px;
+    max-width: 50%;
+    background-color: #E9DCCC;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.texto3 {
+    position:relative;
+    border-radius: 5px;
+    border: none;
+    top: -500px;
+    left: 800px;
+    max-width: 50%;
+    background-color: #E9DCCC;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.voltar i{
+    position:absolute;
+    top: 4vh;
+    left: 2vh;
+    font-size: 35px;
+    margin-right: 5px;
+    color: #fff; 
+}
+
+.home i{
+    position:absolute;
+    left:5.2vh;
+    top: 4vh;
+    font-size: 30px;
+    margin-right: 5px;
+    color: #fff; 
+}
+
+.logoif{
+    position:relative;
+    top: 100px;
+    left: 0;
+}
+
+.FotosCSS{
+    top: -500px;
+    left: 800px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+}

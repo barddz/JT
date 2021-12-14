@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eval.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>JavaScript - While</title>
+</head>
+
+<body>
+    <div class="BarraSuperior">
+
+        <div class="voltar">
+            <a href="java.html">
+                <i class='bx bx-left-arrow-alt'></i>
+            </a>
+        </div>
+
+        <div class="home">
+            <a href="index.html">
+                <i class='bx bxs-home'></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="logoif">
+        <img src="images/whilefoto1.jpg">
+    </div>
+
+    <div class="texto2">
+
+        <h1>While</h1>
+        <p>A condição while testa uma determinada condição no início de cada volta do loop<br>
+            e continua fazendo isso enquanto a expressão condicional for verdadeira. A condição<br>
+            deve ser manipulada para que em determinado momento ela seja falsa e o loop termine.<br>
+            Caso a condição não mude e continue verdadeira para sempre, teremos um loop infinito.<br>
+
+            while (condição) { <br>
+            Ação; <br>
+            } <br>
+            <br>
+            var count = 0; <br>
+            while (10 => cout) { <br>
+            document.write(count); <br>
+            <br>
+            count++;<br>
+            } <br>
+
+        </p>
+
+        As condições for têm a mesma função da condição while, fazer algo repetitivo.
+        <p>No entanto, ao invés de utilizar uma expressão desconhecida, utilizamos um conjunto fixo de circunstâncias.
+        <br>Nele, temos que inicializar uma variável com um valor qualquer, testar uma condição, e incrementar ou
+        decrementar o valor da variável inicial, tudo na mesma instrução.<br>
+        Agora que sabe um pouco sobre os comandos acima teste aqui seus conhecimentos na caixa abaixo
+        (aumente o tamanho da caixa no canto inferior direito dela e clike no botãonzinho para que o código seja efetuado), lembrando que é necessário apertar a tecla F12 para
+        observar o resultado do seu comando no console a direita.
+        Nós criadores do site recomendamos que sempre que tiver dúvidas ou os comandos não funcionem há diversos
+        outros sites para complementar seu conhecimento pela internet, agora vamos para prática:<br>
+        <br>
+
+        <textarea id="text"></textarea>
+        <button onclick="Run()"></button>
+
+    </div>
+
+</body>
+<script>
+
+function Run() {
+    alert(eval(document.getElementById("text").value));
+}
+
+</script>
+</html>

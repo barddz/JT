@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="eval.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>JavaScript - Funções</title>
+</head>
+
+<body>
+
+
+    <div class="BarraSuperior">
+
+        <div class="TextoSup">
+            Funções
+        </div>
+
+
+        <div class="voltar">
+            <a href="java.html">
+                <i class='bx bx-left-arrow-alt'></i>
+            </a>
+        </div>
+
+        <div class="home">
+            <a href="index.html">
+                <i class='bx bxs-home'></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="logoif">
+        <img src="images/functionfoto.png">
+    </div>
+
+    <div class="texto2">
+
+        <p>
+            
+            FUNÇÕES NO JAVASCRIPT
+
+            <br>Funções são blocos de construção fundamentais em JavaScript. Uma função é um procedimento de JavaScript
+            - um
+            <br>conjunto de instruções que executa uma tarefa ou calcula um valor. Para usar uma função, você deve
+            defini-la
+            <br>em algum lugar no escopo do qual você quiser chamá-la.De modo geral, função é um "subprograma" que pode
+            ser
+            <br>chamado por código externo (ou interno no caso de recursão) à função. Assim como o programa em si, uma
+            <br> função é composta por uma sequência de instruções chamada corpo da função. Valores podem ser passados
+            para
+            <br> uma função e ela vai retornar um valor.
+            <br> Em JavaScript, funções são objetos de primeira classe, pois elas podem ter propriedades e métodos como
+            <br> elas são objetos Function.
+            <br> DESCRIÇÃO
+            <br> Toda função em JavaScript é um objeto Function. Funções não são como procedimentos (procedure). Uma
+            função
+            <br> sempre retorna um valor, mas um procedimento pode ou não retornar um valor. Para retornar um valor
+            diferente
+            <br> do padrão, uma função deve ter uma instrução return que específica o valor a ser retornado. Uma função
+            sem
+            <br> um return retornará um valor padrão. No caso de um método construtor chamado com a palavra reservada
+            new , o
+            <br> valor padrão é o valor do parâmetro this. Para todas as outras funções, o valor padrão de retorno é
+            <br> undefined (indefinido). Os parâmetros de uma função são chamados de argumentos da função. Argumentos
+            são
+            <br> passados para a função por valor. Se uma função muda o valor de um argumento, esta mudança não é
+            refletida
+            <br> globalmente ou na chamada da função. Contudo, referência de objetos são valores também, e eles são
+            <br> especiais: se a função muda as propriedades do objeto referenciado, estas mudanças são visíveis fora da
+            <br> função, como é mostrado no exemplo a seguir:
+
+        <p>/* Declare a função 'minhaFunção'*/
+
+        <p>function minhaFuncao(objeto){
+            <br> objeto.marca = "Toyota";
+            <br>}
+
+        <p>/*Declare a variável 'meucarro';
+            <br> *crie e inicialize um novo Objeto;
+            <br> *atribua referência para 'meucarro'
+            <br> */
+
+        <p>var meucarro = {
+            <br> marca: "Honda",
+            <br> modelo: "accord"
+            <br> ano: 1998
+            <br> };
+
+        <p>/* exibe 'Honda' */
+
+        <p>console.log(meucarro.marca);
+
+        <p>/*Passe a referência do objeto para a função */
+
+        <p>minhaFuncao(meucarro);
+
+        <p>/*Exibe 'Toyota' como valor para a propriedade 'marca'
+            <br> *do objeto , mudado pela função.*/
+
+        <p>console.log(meucarro.marca);
+
+        <p>A palavra reservada this não se refere a função sendo executada no momento, então você deve referenciar um
+            <br> objeto Function pelo nome, mesmo dentro do corpo da função.
+
+        <p>DESCRIÇÃO Finalizada
+
+        <p>Definindo Funções
+
+        <p>A definição da função (também chamada de declaração de função) consiste no uso da palavra-chave function ,
+            <br> seguida por:
+
+        <p>1 ➜ Nome da função.
+            <br> 2 ➜ Lista de argumentos para a função, entre parênteses e separados por vírgulas.
+            <br> 3 ➜ Declarações JavaScript que definem a função, entre chaves { }.
+
+        <p>Exemplo :
+
+
+        <p>function nome([param[, param[, ... param]]]) {
+            <br> instruções
+            <br> }
+            <br> Nome : O nome da função.
+
+        <p>param : O nome de um argumento a ser passado para a função.
+
+        <p>instruções : As instruções que formam o corpo da função.
+
+        <p>Por exemplo, o código a seguir define uma função simples chamada square:
+
+        <p>function square(numero) {
+            <br> return numero * numero;
+            <br> }
+            <br> A função square recebe um argumento chamado numero. A função consiste em uma instrução que indica para
+            <br> retornar o argumento da função (isto é, numero) multiplicado por si mesmo. A declaração return
+            especifica o valor retornado pela função.
+            <br> return numero * numero;
+            <br> Parâmetros primitivos (como um número) são passados para as funções por valor; o valor é passado para a
+            <br> função, mas se a função altera o valor do parâmetro, esta mudança não reflete globalmente ou na função
+            <br> chamada.
+            <br> Se você passar um objeto (ou seja, um valor não primitivo), tal como Array ou um objeto definido por
+            você)
+            <br> como um parâmetro e a função alterar as propriedades do objeto, essa mudança é visível fora da função,
+            <br> conforme mostrado no exemplo a seguir:
+
+        <p>function minhaFuncao(objeto) {
+            <br> objeto.make = "Toyota";
+            <br> }
+
+        <p>var meucarro = {make: "Honda", model: "Accord", year: 1998};
+            <br>var x, y;
+
+        <p>x = meucarro.make; // x recebe o valor "Honda"
+
+        <p>minhaFuncao(meucarro);
+            <br> y = meucarro.make; // y recebe o valor "Toyota"
+            <br> // (a propriedade make foi alterada pela função)
+
+        <p>Expressão de Função
+            <br> Embora a declaração de função acima seja sintaticamente uma declaração, funções também podem ser
+            criadas por
+            <br> uma expressão de função. Tal função pode ser anônima; ele não tem que ter um nome. Por exemplo, a
+            função
+            <br> square poderia ter sido definida como:
+
+        <p>var square = function(numero) {return numero * numero};
+            <br> var x = square(4) //x recebe o valor 16
+
+        <p>No entanto, um nome pode ser fornecido com uma expressão de função e pode ser utilizado no interior da
+            <br>função para se referir a si mesma, ou em um debugger para identificar a função em stack traces:
+
+        <p>var fatorial = function fac(n) {return 2 > n ? 1 : n*fac(n-1)}; console.log(fatorial(3)); As expressões de
+            <br> função são convenientes ao passar uma função como um argumento para outra função. O exemplo a seguir
+            <br> mostra uma função map sendo definida e, em seguida, chamada com uma função anônima como seu primeiro
+            <br> parâmetro: function map(f,a) { var result=[]; // Cria um novo Array var i; for (i=0; i !=a.length; i++)
+            <br> result[i]=f(a[i]); return result; } O código a seguir: map(function(x) {return x * x * x}, [0, 1, 2, 5,
+            <br> 10]); retorna [0, 1, 8, 125, 1000]. Em JavaScript, uma função pode ser definida com base numa condição.
+            <br> Por exemplo, a seguinte definição de função define minhaFuncao somente se num é igual a 0: var
+            <br> minhaFuncao; if (num==0){ minhaFuncao=function(objeto) { objeto.make="Toyota" } } Além de definir
+            <br> funções, você também pode usar o construtor Function para criar funções a partir de uma string em tempo
+            real.
+        </p>
+
+        As condições for têm a mesma função da condição while, fazer algo repetitivo.
+        <p>No entanto, ao invés de utilizar uma expressão desconhecida, utilizamos um conjunto fixo de circunstâncias.
+        <br>Nele, temos que inicializar uma variável com um valor qualquer, testar uma condição, e incrementar ou
+        decrementar o valor da variável inicial, tudo na mesma instrução.<br>
+        Agora que sabe um pouco sobre os comandos acima teste aqui seus conhecimentos na caixa abaixo
+        (aumente o tamanho da caixa no canto inferior direito dela e clike no botãonzinho para que o código seja efetuado), lembrando que é necessário apertar a tecla F12 para
+        observar o resultado do seu comando no console a direita.
+        Nós criadores do site recomendamos que sempre que tiver dúvidas ou os comandos não funcionem há diversos
+        outros sites para complementar seu conhecimento pela internet, agora vamos para prática:<br>
+        <br>
+
+        <textarea id="text"></textarea>
+        <button onclick="Run()"></button>
+                 
+    </div>
+
+</body>
+<script>
+
+function Run() {
+    alert(eval(document.getElementById("text").value));
+}
+
+</script>
+
+</html>
